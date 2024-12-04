@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 18, 2024 7:37:16 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.TbMbrg" table="tb_mbrg" catalog="db_sop" optimistic-lock="version">
+        <id name="kodeBarang" type="string">
+            <column name="kodeBarang" length="12" />
+            <generator class="assigned" />
+        </id>
+        <property name="pelanggan" type="string">
+            <column name="pelanggan" length="30" not-null="true" />
+        </property>
+        <property name="jenisBarang" type="string">
+            <column name="jenisBarang" length="50" not-null="true" />
+        </property>
+        <property name="stok" type="int">
+            <column name="stok" not-null="true" />
+        </property>
+        <property name="harga" type="int">
+            <column name="harga" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
